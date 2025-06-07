@@ -27,7 +27,7 @@
       text-align: center;
     }
     .card img.logo {
-      max-width: 400px; /* Zwiększono z 150px */
+      max-width: 220px;
       margin-bottom: 1rem;
     }
     .card h1 {
@@ -41,7 +41,7 @@
     .contact-links {
       margin-top: 1.5rem;
     }
-    .contact-links a {
+    .contact-links a.button {
       display: inline-block;
       margin: 0.5rem;
       padding: 0.75rem 1.25rem;
@@ -52,8 +52,11 @@
       font-weight: bold;
       transition: background 0.3s;
     }
-    .contact-links a:hover {
+    .contact-links a.button:hover {
       background: #0056b3;
+    }
+    .buycoffee-button {
+      margin-top: 1rem;
     }
   </style>
 </head>
@@ -63,10 +66,14 @@
     <h1>Filip Goleń</h1>
     <p>Druk 3D na zamówienie</p>
     <div class="contact-links">
-      <a href="mailto:f.golen3d@gmail.com">Napisz e-mail</a>
-      <a href="tel:+48737898638">Zadzwoń teraz</a>
-      <a href="https://api.whatsapp.com/send?phone=48737898638" target="_blank">WhatsApp</a>
-      <a href="https://buycoffee.to/fgolen3d" target="_blank">Postaw kawę ☕</a>
+      <a href="mailto:f.golen3d@gmail.com" class="button">Napisz e-mail</a>
+      <a href="tel:+48737898638" class="button">Zadzwoń teraz</a>
+      <a href="https://api.whatsapp.com/send?phone=48737898638" target="_blank" class="button">WhatsApp</a>
+      <div class="buycoffee-button">
+        <a href="https://buycoffee.to/fgolen3d" target="_blank">
+          <img src="https://buycoffee.to/img/share-button-primary.png" style="width: 351px; height: 92px" alt="Postaw mi kawę na buycoffee.to">
+        </a>
+      </div>
     </div>
   </div>
 </body>
